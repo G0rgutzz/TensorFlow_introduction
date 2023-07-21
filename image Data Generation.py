@@ -32,7 +32,6 @@ print('total number of horse images: ', len(os.listdir(train_horse_dir)))
 """
 
 test_datagen = ImageDataGenerator(rescale=1./255)
-
 validation_generator = test_datagen.flow_from_directory(
     validation_dir,
     target_size=(300, 300),
